@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  app-ddd:
+    build: .
+    container_name: app-ddd
+    volumes:
+      - .:/home/node/app
+    ports:
+      - 8080:8080

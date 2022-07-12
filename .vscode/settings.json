@@ -1,0 +1,12 @@
+{
+  "jestrunner.jestCommand": "npm run test:clear",
+  "conventionalCommits.scopes": [
+    "product",
+    "order",
+    "customer",
+    "project",
+    "repository",
+    "config",
+    "event"
+  ]
+}
