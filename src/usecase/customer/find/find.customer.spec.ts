@@ -3,6 +3,7 @@ import Customer from "../../../domain/customer/entity/customer";
 import Address from "../../../domain/customer/value-object/address";
 import CustomerModel from "../../../infrastructure/costumer/repository/sequelize/customer.model";
 import CustomerRepository from "../../../infrastructure/costumer/repository/sequelize/customer.repository";
+import FindCustomerUseCase from "./find.customer.usecase";
 
 describe("Test find customer use case", () => {
   let sequelize: Sequelize;
