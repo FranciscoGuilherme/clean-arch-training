@@ -1,4 +1,4 @@
-import unittest
+import CreateCustomerUseCase from "./create.customer.usecase";
 
 const input = {
   name: "John",
@@ -22,12 +22,12 @@ const MockRepository = () => {
 describe("Unhit test create customer use case", () => {
   it("should create a customer", async () => {
     const customerRepository = MockRepository();
-    const customerCreateUseCase = new CustomerCreateUseCase(customerRepository);
+    const customerCreateUseCase = new CreateCustomerUseCase(customerRepository);
 
     const output = await customerCreateUseCase.execute(input);
-    
+
     expect(output).toEqual({
-      id: expect.any(string),
+      id: expect.any(String),
       name: input.name,
       address: {
         street: input.address.street,
