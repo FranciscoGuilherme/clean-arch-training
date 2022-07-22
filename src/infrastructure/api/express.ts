@@ -5,7 +5,7 @@ import { customerRoute } from "./routes/customer.route";
 
 export const app: Express = express();
 app.use(express.json());
-app.use("/customer", customerRoute);
+app.use("/customers", customerRoute);
 
 export let sequelize: Sequelize;
 
@@ -19,3 +19,4 @@ async function setupDb() {
   await sequelize.addModels([CustomerModel]);
   await sequelize.sync();
 }
+setupDb();
