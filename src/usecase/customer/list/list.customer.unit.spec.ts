@@ -17,7 +17,7 @@ const MockRepository = () => {
     create: jest.fn(),
     find: jest.fn(),
     update: jest.fn(),
-    findAll: jest.fn().mockRejectedValue(Promise.resolve([customer1, customer2]))
+    findAll: jest.fn().mockReturnValue(Promise.resolve([customer1, customer2]))
   };
 };
 
