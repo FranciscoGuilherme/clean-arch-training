@@ -3,7 +3,7 @@ version: "3"
 services:
   app-ddd:
     build: .
-    container_name: app-ddd
+    container_name: app-clean-arch
     volumes:
       - .:/home/node/app
     ports:
