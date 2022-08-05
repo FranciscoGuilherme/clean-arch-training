@@ -9,6 +9,7 @@
     "config",
     "event",
     "api",
-    "notification"
+    "notification",
+    "domain"
   ]
 }
