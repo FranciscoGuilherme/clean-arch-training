@@ -10,6 +10,7 @@
     "event",
     "api",
     "notification",
-    "domain"
+    "domain",
+    "validator"
   ]
 }
